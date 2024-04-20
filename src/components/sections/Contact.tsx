@@ -85,7 +85,7 @@ const Contact = () => {
                                   onChange={handleChange}
                                   placeholder={placeholder}
                                   style={{
-                                      background: "linear-gradient(to right, rgb(0, 47, 166), rgb(8, 1, 82))",
+                                      background: "#000000",
                                   }}
                                   className="bg-tertiary placeholder:text-secondary rounded-lg border-none px-6 py-4 font-medium text-white outline-none"
                                   {...(input === "message" && {rows: 7})}

@@ -102,7 +102,7 @@ const experiences: TExperience[] = [
         icon: sourcemind,
         iconBg: "#383E56",
         date: "June 2022 - November 2022",
-        points : [
+        points: [
             "Worked under professional staff to contribute to successful development of Backend applications. ",
             "Produced clean, tight code to create well-functioning software applications. ",
             "Organized CI/CD in TeamCity. Built several APIs with Javalin framework and made a full stack web application as a graduation project. ",
@@ -115,11 +115,11 @@ const experiences: TExperience[] = [
 const testimonials: TTestimonial[] = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+            "5 stars",
+        name: "Alireza Zarei",
+        designation: "#Node.js #GraphQL #Neo4J #ApolloFederation",
+        company: "FiredStack",
+        image: "",
     },
 ];
 
@@ -147,4 +147,4 @@ const projects: TProject[] = [
     }
 ];
 
-export {services, technologies, experiences, projects};
+export { testimonials, services, technologies, experiences, projects };
