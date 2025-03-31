@@ -19,6 +19,8 @@ import {
     esterox,
     clustering,
     sourcemind,
+    python,
+    fastapi
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -38,7 +40,7 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
     {
-        title: "Junior Node.js Developer",
+        title: "Back-End Developer",
         icon: web,
     },
     {
@@ -77,8 +79,12 @@ const technologies: TTechnology[] = [
         icon: docker,
     },
     {
-        name: "java",
-        icon: java
+        name: "Python",
+        icon: python
+    },
+    {
+        name: "FastAPI",
+        icon: fastapi
     }
 ];
 
@@ -88,12 +94,12 @@ const experiences: TExperience[] = [
         companyName: "Esterox",
         icon: esterox,
         iconBg: "#383E56",
-        date: "August 2023 - up to now",
+        date: "August 2023 - March 2025",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed AI assistant based on RAG model with Python, FastAPI. Used BGE-M3 model for embeddings.",
         ],
     },
     {
@@ -121,6 +127,14 @@ const testimonials: TTestimonial[] = [
         company: "FiredStack",
         image: "",
     },
+    {
+        testimonial:
+            "Gevorg has great communications both verbal and written, his code is outstanding and, and he thinks outside of the box when providing a solution.",
+        name: "Muhdo Health",
+        designation: "#NodeJs #React #MongoDB #AWS",
+        company: "NodeJs / React / MongoDB / AWS Full stack developer",
+        image: ""
+    }
 ];
 
 const projects: TProject[] = [

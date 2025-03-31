@@ -21,7 +21,8 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import python from "./tech/python.png";
+import fastapi from "./tech/fastapi.svg";
 
 import esterox from "./company/esterox.png";
 import sourcemind from "./company/sourcemind.png"
@@ -55,5 +56,7 @@ export {
     jobit,
     tripguide,
     sourcemind,
-    clustering
+    clustering,
+    python,
+    fastapi
 };
