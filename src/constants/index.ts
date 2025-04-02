@@ -8,7 +8,6 @@ import type {
 
 import {
     web,
-    java,
     javascript,
     typescript,
     reactjs,
@@ -17,10 +16,13 @@ import {
     git,
     docker,
     esterox,
-    clustering,
+    websageai,
+    complian,
     sourcemind,
     python,
-    fastapi
+    iplanner,
+    fastapi,
+    goldensb
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -40,12 +42,16 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
     {
-        title: "Back-End Developer",
+        title: "Back-end Development",
         icon: web,
     },
     {
-        title: "Back-End Engineer Intern",
-        icon: java
+        title: "AI RAG Development",
+        icon: python
+    },
+    {
+        title: "Client side applications",
+        icon: reactjs
     }
 ];
 
@@ -90,8 +96,20 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
     {
-        title: "Junior Node.js Developer",
-        companyName: "Esterox",
+        title: "Back-End Developer",
+        companyName: "Golden SB Tech Group",
+        icon: goldensb,
+        iconBg: "#383E56",
+        date: "April 2023 - Up to now",
+        points: [
+            "RPA development for web and mobile application,",
+            "Web scraping and automation applications using Node.js with Playwright and Webdriver.io",
+            "Maintenance and support of remote hosts.",
+        ],
+    },
+    {
+        title: "Back-End Developer",
+        companyName: "Esterox LLC",
         icon: esterox,
         iconBg: "#383E56",
         date: "August 2023 - March 2025",
@@ -139,26 +157,89 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
     {
-        name: "Clustering application for BA thesis",
+        name: "WEBSAGE AI",
         description:
-            "This Python code performs image clustering using K-means clustering. It loads three images, resizes them to have the same dimensions, extracts features from the images, and then applies K-means clustering to the features. Finally, it visualizes the clusters by plotting the clustered pixels and displaying the clustered images.",
+            "AI assistant, aimed at improving customer service with fast, accurate and humanized responses to customer requests-available 24/7. Due to natural language processing, it understands contexts and provides personalized answers, creating a smooth experience for both customers and businesses. Trained on website-specific data, it also offers a customizable environment that aligns with your brand",
         tags: [
             {
-                name: "numpy",
+                name: "bge-m3",
                 color: "blue-text-gradient",
             },
             {
-                name: "cv2",
+                name: "fastapi",
                 color: "green-text-gradient",
             },
             {
-                name: "matplotlib",
+                name: "numpy",
                 color: "pink-text-gradient",
             },
+            {
+                name: "llm_rag",
+                color: "violet-text-gradient",
+            },
+            {
+                name: "qdrant_vector_db",
+                color: "orange-text-gradient",
+            },
         ],
-        image: clustering,
-        sourceCodeLink: "https://github.com/gevorggasparyan31/clustering",
-    }
+        image: websageai
+    },
+    {
+        name: "iPlanner",
+        description:
+            "This app lets users design their buildings and choose building materials using planner5D. Three different user groups: individual homeowners who wish to build or renovate their homes, construction firms that provide their services and supplies, and consultants who may offer advisory services to customers while the project is being built or planned from the start.",
+        tags: [
+            {
+                name: "express.js",
+                color: "orange-text-gradient",
+            },
+            {
+                name: "next.js",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Apache",
+                color: "violet-text-gradient",
+            },
+            {
+                name: "stripe_api",
+                color: "blue-text-gradient  ",
+            },
+        ],
+        image: iplanner
+    },
+    {
+        name: "ComplianAI",
+        description:
+            "ComplianAI simplifies compliance processes by automatically extracting key findings from reports, policies, and questionnaires, ensuring quick compliance reviews. With powerful Al integration, the platform streamlines document analysis and offers robust security features for seamless performance.",
+        tags: [
+            {
+                name: "express.js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "next.js",
+                color: "green-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "openai_api",
+                color: "violet-text-gradient",
+            },
+            {
+                name: "typescript",
+                color: "orange-text-gradient",
+            },
+        ],
+        image: complian
+    },
 ];
 
 export { testimonials, services, technologies, experiences, projects };

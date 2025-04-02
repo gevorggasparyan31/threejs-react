@@ -15,7 +15,6 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
  description,
  tags,
  image,
- sourceCodeLink,
 }) => {
   return (
       <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -34,16 +33,6 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
                   className="h-full w-full rounded-2xl object-cover"
               />
               <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
-                <div
-                    onClick={() => window.open(sourceCodeLink, "_blank")}
-                    className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
-                >
-                  <img
-                      src={github}
-                      alt="github"
-                      className="h-1/2 w-1/2 object-contain"
-                  />
-                </div>
               </div>
             </div>
             <div className="mt-5">

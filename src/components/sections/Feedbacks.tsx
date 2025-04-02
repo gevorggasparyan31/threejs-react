@@ -13,7 +13,6 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
       name,
       designation,
       company,
-      image,
   }) => (
     <motion.div
         variants={fadeIn("", "spring", index * 0.5, 0.75)}
@@ -37,12 +36,6 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
                         {designation}
                     </p>
                 </div>
-
-                {/*<img*/}
-                {/*  src={image}*/}
-                {/*  alt={`feedback_by-${name}`}*/}
-                {/*  className="h-10 w-10 rounded-full object-cover"*/}
-                {/*/>*/}
             </div>
         </div>
     </motion.div>

@@ -6,7 +6,10 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import clustering from "./Screenshot from 2024-04-12 22-56-45.png"
+
+import websageai from "./websageai.png"
+import complian from "./complian.jpeg"
+import iplanner from "./iplanner.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -25,6 +28,7 @@ import python from "./tech/python.png";
 import fastapi from "./tech/fastapi.svg";
 
 import esterox from "./company/esterox.png";
+import goldensb from "./company/goldensb.jpeg";
 import sourcemind from "./company/sourcemind.png"
 
 import jobit from "./jobit.png";
@@ -53,10 +57,13 @@ export {
     typescript,
     threejs,
     esterox,
+    goldensb,
     jobit,
     tripguide,
     sourcemind,
-    clustering,
+    websageai,
+    iplanner,
+    complian,
     python,
     fastapi
 };
