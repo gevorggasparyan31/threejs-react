@@ -100,7 +100,7 @@ const experiences: TExperience[] = [
         companyName: "Golden SB Tech Group",
         icon: goldensb,
         iconBg: "#383E56",
-        date: "April 2023 - Up to now",
+        date: "April 2025 - Up to now",
         points: [
             "RPA development for web and mobile application,",
             "Web scraping and automation applications using Node.js with Playwright and Webdriver.io",
