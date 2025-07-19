@@ -13,9 +13,9 @@ const INITIAL_STATE = Object.fromEntries(
 );
 
 const emailjsConfig = {
-  serviceId: "service_mqub5ci",
-  templateId: "template_5jr1r9m",
-  accessToken: "S6fr6STFm25ewgdI_",
+  serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+  templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+  accessToken: import.meta.env.VITE_EMAILJS_ACCESS_TOKEN,
 };
 
 const Contact = () => {
@@ -33,29 +33,49 @@ const Contact = () => {
         e.preventDefault();
         setLoading(true);
 
-        // Concatenate form data into a single message
-        const message = `Name: ${form.name}\nEmail: ${form.email}\nMessage: ${form.message}`;
+        const { name, email, message } = form;
+        const time = new Date().toLocaleString();
 
-        // Use EmailJS to send the concatenated message
-        emailjs
-            .send(
-                emailjsConfig.serviceId,
-                emailjsConfig.templateId,
-                { message },
-                emailjsConfig.accessToken
-            )
-            .then(
-                () => {
-                    setLoading(false);
-                    setShowMessage(true);
-                    setForm(INITIAL_STATE);
-                },
-                (error) => {
-                    setLoading(false);
-                    console.log(error);
-                    alert("Something went wrong.");
-                }
-            );
+        // Template 1: Auto-reply to user
+        const autoReplyParams = {
+          name,
+          message,
+          email,
+        };
+
+        // Template 2: Send to yourself
+        const internalParams = {
+          name,
+          email,
+          message,
+          time,
+        };
+
+        const sendToUser = emailjs.send(
+          emailjsConfig.serviceId,
+          emailjsConfig.templateId, // auto-reply to user
+          autoReplyParams,
+          emailjsConfig.accessToken
+        );
+
+        const sendToMe = emailjs.send(
+          emailjsConfig.serviceId,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID2, // send to yourself
+          internalParams,
+          emailjsConfig.accessToken
+        );
+
+        Promise.all([sendToUser, sendToMe])
+          .then(() => {
+            setLoading(false);
+            setShowMessage(true);
+            setForm(INITIAL_STATE);
+          })
+          .catch((error) => {
+            setLoading(false);
+            console.error(error);
+            alert("Oops, something went wrong. Please try again.");
+          });
     };
 
 
