@@ -10,6 +10,7 @@ import close from "./close.svg";
 import websageai from "./websageai.png"
 import complian from "./complian.jpeg"
 import iplanner from "./iplanner.png";
+import kodeops from "./kodeops.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -26,6 +27,9 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import python from "./tech/python.png";
 import fastapi from "./tech/fastapi.svg";
+import code from "./code-256.png";
+import frontend from "./frontend.png";
+import aidev from "./aidev.png";
 
 import esterox from "./company/esterox.png";
 import goldensb from "./company/goldensb.jpeg";
@@ -64,6 +68,10 @@ export {
     websageai,
     iplanner,
     complian,
+    kodeops,
+    aidev,
+    code,
+    frontend,
     python,
     fastapi
 };

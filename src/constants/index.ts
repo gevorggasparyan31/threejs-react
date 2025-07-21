@@ -7,7 +7,6 @@ import type {
 } from "../types";
 
 import {
-    web,
     javascript,
     typescript,
     reactjs,
@@ -18,11 +17,15 @@ import {
     esterox,
     websageai,
     complian,
+    kodeops,
     sourcemind,
     python,
     iplanner,
     fastapi,
-    goldensb
+    goldensb,
+    aidev,
+    code,
+    frontend
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -43,15 +46,15 @@ export const navLinks: TNavLink[] = [
 const services: TService[] = [
     {
         title: "Back-end Development",
-        icon: web,
+        icon: code,
     },
     {
-        title: "AI RAG Development",
-        icon: python
+        title: "AI Development",
+        icon: aidev
     },
     {
         title: "Client side applications",
-        icon: reactjs
+        icon: frontend
     }
 ];
 
@@ -102,9 +105,10 @@ const experiences: TExperience[] = [
         iconBg: "#383E56",
         date: "April 2025 - Up to now",
         points: [
-            "RPA development for web and mobile application,",
-            "Web scraping and automation applications using Node.js with Playwright and Webdriver.io",
-            "Maintenance and support of remote hosts.",
+            "Developing, implementing, and managing Robotic Process Automation (RPA) solutions for payment system's workflow.",
+            "Automating robust and scalable payment systems utilizing Playwright and Webdriver.io frameworks.",
+            "Providing maintenance and technical support for Windows and Ubuntu server environments.",
+            "Back end applications development using Node.js.",
         ],
     },
     {
@@ -240,6 +244,33 @@ const projects: TProject[] = [
         ],
         image: complian
     },
+  {
+    name: "Shipkode Kodeops AI",
+    description: "Kodeops is an AI-powered solution that simplifies project workflows by analyzing data from chat systems, task management platforms, and Git repositories. It provides actionable insights, generates tasks, and offers guidance on their execution. By leveraging OpenAI and robust backend architecture.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "redis",
+        color: "violet-text-gradient",
+      },
+      {
+        name: "auth0",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: kodeops
+  }
 ];
 
 export { testimonials, services, technologies, experiences, projects };
