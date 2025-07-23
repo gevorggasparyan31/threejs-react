@@ -83,11 +83,7 @@ export const config: TConfig = {
     works: {
       p: "My work",
       h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      content: `These projects highlight my experience through real-world examples. Each card provides a brief description of the project along with the technologies used, offering insight into the type of work I’ve done and the tools I’ve worked with.`,
     },
   },
 };
